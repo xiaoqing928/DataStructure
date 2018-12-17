@@ -28,7 +28,7 @@ def servre(node):
         stack.append(v)
         node = node.next
     l = len(stack)-1
-    while l>=0 and cur != None:
+    while l>=0:
         if cur.val == stack.pop():
             cur = cur.next
             l -= 1

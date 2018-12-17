@@ -12,9 +12,9 @@ class Node:
         self.next = None
 
 a1 = Node(1)
-a2 = Node(1)
-a3 = Node(2)
-a4 = Node(1)
+a2 = Node(2)
+a3 = Node(3)
+a4 = Node(4)
 # a5 = Node(1)
 a1.next = a2
 a2.next = a3
@@ -39,10 +39,12 @@ def reserver1(node):
             return False
         cur = cur.next
     return True
-r = reserver1(a1)
-print(r)
+# r = reserver1(a1)
+# print(r)
 
-
+while a1.next:
+    print(a1.next)
+    a1 = a1.next
 
 
 
